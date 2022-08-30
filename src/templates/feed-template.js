@@ -3,6 +3,7 @@ import * as React from "react"
 import Layout from "../components/Layout"
 import Seo from "../components/SEO"
 import SimpleBanner from "../components/SimpleBanner/SimpleBanner"
+import ProjectFeed from "../components/Feeds/ProjectFeed"
 import ProductFeed from "../components/Feeds/ProductFeed"
 import PostFeed from "../components/Feeds/PostFeed"
 
@@ -10,6 +11,9 @@ const getTemplate = (contentfulPage) => {
   const { feedType } = contentfulPage
 
   switch (feedType) {
+    case "Projects":
+      return <ProjectFeed {...contentfulPage} />
+
     case "Products":
       return <ProductFeed {...contentfulPage} />
 

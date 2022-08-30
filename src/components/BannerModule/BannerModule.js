@@ -4,7 +4,7 @@ import { BannerModuleStyles } from "./BannerModuleStyles"
 import { StaticImage } from "gatsby-plugin-image"
 import Button from "../Button/Button"
 
-const BannerModule = ({ children, title, subTitle, price, enquire }) => {
+const BannerModule = ({ children, title, subTitle, price, enquire, url }) => {
   function scrollToArea() {
     navigate("#topContent")
   }
@@ -18,7 +18,7 @@ const BannerModule = ({ children, title, subTitle, price, enquire }) => {
           <StaticImage
             className="banner__image"
             imgClassName="banner__image--content"
-            src="../../../static/macbook-color.jpg"
+            src="../../../static/hallstatt-night.jpg"
             alt="Banner Image"
             layout="fullWidth"
             placeholder="blurred"
@@ -49,7 +49,8 @@ const BannerModule = ({ children, title, subTitle, price, enquire }) => {
                   to="/contact"
                 />
               )}
-              <Button onClick={scrollToArea} text="Learn More" />
+              {/* <Button onClick={scrollToArea} text="Learn More" /> */}
+              <Button text="Learn More" as={Link} to={url} />
             </div>
           </div>
         </div>

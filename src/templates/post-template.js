@@ -19,13 +19,13 @@ const PostTemplate = (contentfulPost) => {
             <article className="blogsingle__content">
               <RichText richText={content} />
               <div className="blogsingle__back">
-                <Button to="/news" text="Back to news" as={Link} />
+                <Button to="/blogs" text="Back to blogs" as={Link} />
               </div>
             </article>
           )}
         </PostSingleStyles>
       </section>
-      <LatestPosts title="Further reading from Barcadia" />
+      <LatestPosts title="Further reading from One For The Code" />
     </>
   )
 }

@@ -5,7 +5,8 @@ import BannerModule from "../components/BannerModule/BannerModule"
 import BasicTextModule from "../components/BasicTextModule/BasicTextModule"
 import PerksModule from "../components/PerksModule/PerksModule"
 import Perk from "../components/PerksModule/Perk"
-import Features from "../components/Features/Features"
+// import Features from "../components/Features/Features"
+import Projects from "../components/Projects/Projects"
 import LatestPosts from "../components/Post/LatestPosts"
 
 const Index = () => {
@@ -14,28 +15,29 @@ const Index = () => {
       <Seo title="Home" />
       <Layout>
         <BannerModule
-          title="Welcome to Barcadia"
-          subTitle="Using a combination of Gatsby and Contentful, Barcadia is ready to deploy and simple to use."
+          title="One more shot for the code"
+          subTitle="Software Engineering | Cloud Computing | Cyber Security"
         />
         <BasicTextModule
-          title="A super-fast theme that is easy to get started, using the power of
-            GatsbyJS"
-          content="Using modern CSS properties such as grid, this theme is optmised for
-            speed and mobile devices. Giving users an excellent experience on
-            any device. Future-proofing your product."
-          link="/products"
-          linkText="View Products"
+          title="Cloud Computing and Cyber Security have become the trend around the world"
+          content="Using modern programming languages such as Golang, and combining cloud engineering technologies, kinds of projects are developed for innovation and convenience. Giving excellent experience on varieties of platforms."
+          link="/projects"
+          linkText="View Projects"
         />
         <PerksModule>
           <Perk title="The Title" content="The content" />
         </PerksModule>
-        <Features
+        <Projects
+          title="Popular Projects"
+          introduction="Featuring useful and powerful functions in different areas, these projects are under well development and maintenance. Aiming to provide great features for anybody, all the projects are developed with an explicit and specific goal. Please feel free to check them out for more information!"
+        />
+        {/* <Features
           title="Featured Products from Barcadia."
           introduction="Vivamus quam mauris, pulvinar vel mauris id, interdum semper neque. Proin malesuada libero eget tellus scelerisque, id egestas tortor egestas."
-        />
+        /> */}
         <LatestPosts
-          title="The Latest from Barcadia"
-          introduction="Cras scelerisque, tellus sed gravida tincidunt, velit tellus blandit justo, nec viverra augue erat in erat. Maecenas iaculis sed purus non fringilla."
+          title="The Latest Posts"
+          introduction="Recording and sharing of knowledge are quite significant and precious. Though the information might be very simple, the experience still could help others who are blocked or stuck here. "
         />
       </Layout>
     </>

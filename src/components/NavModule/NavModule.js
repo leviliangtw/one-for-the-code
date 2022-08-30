@@ -5,11 +5,11 @@ import { motion } from "framer-motion"
 import { menuItems } from "./NavConstants"
 import { UseSiteMetadata } from "../../hooks/useSiteMetadata"
 import useFeaturedProduct from "../../hooks/use-featured-product"
-import { FiChevronDown as Chevron } from "react-icons/fi"
+// import { FiChevronDown as Chevron } from "react-icons/fi"
 import {
   NavModuleStyles,
   NavTopLevel,
-  SubNavStyles,
+  // SubNavStyles,
   HamburgerStyles,
   LogoStyles,
 } from "./NavModuleStyles"
@@ -94,7 +94,7 @@ const NavModule = () => {
               </Link>
             </li>
           ))}
-          {featuredProduct && (
+          {/* {featuredProduct && (
             <li className={subNavIsOpen ? "open" : "closed"}>
               <button
                 type="button"
@@ -137,7 +137,7 @@ const NavModule = () => {
                 })}
               </SubNavStyles>
             </li>
-          )}
+          )} */}
         </NavTopLevel>
       </motion.div>
     </NavModuleStyles>

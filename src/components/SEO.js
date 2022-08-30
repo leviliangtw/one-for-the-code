@@ -9,6 +9,7 @@ const getData = graphql`
         siteTitle: title
         siteDesc: description
         image
+        icon
         author
         siteUrl
         twitterUsername
@@ -25,10 +26,12 @@ const SEO = ({ title, description }) => {
     siteTitle,
     siteUrl,
     image,
+    icon,
     twitterUsername,
   } = site.siteMetadata
   return (
     <Helmet htmlAttribute={{ lang: "en" }} title={`${title} | ${siteTitle}`}>
+      <link rel="icon" type="image/png" href={icon} />
       <meta name="description" content={description || siteDesc} />
       <meta name="image" content={image} />
       {/* Facebook Card */}

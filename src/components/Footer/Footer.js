@@ -2,7 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { menuItems } from "../../constants/links"
 import { FooterStyles, FooterMenuStyles, CopyrightStyles } from "./FooterStyles"
-import useAllProduct from "../../hooks/use-all-product"
+import useAllProject from "../../hooks/use-all-project"
 import { UseSiteMetadata } from "../../hooks/useSiteMetadata"
 import {
   FaFacebookSquare as Facebook,
@@ -12,7 +12,7 @@ import {
 } from "react-icons/fa"
 
 const Footer = () => {
-  const allProduct = useAllProduct()
+  const allProject = useAllProject()
   const siteMeta = UseSiteMetadata()
   return (
     <FooterStyles style={{ marginBottom: 0 }} className="section">
@@ -32,15 +32,15 @@ const Footer = () => {
             })}
           </ul>
         </FooterMenuStyles>
-        {allProduct.length > 0 && (
-          <FooterMenuStyles className="footer__menu products__menu">
+        {allProject.length > 0 && (
+          <FooterMenuStyles className="footer__menu projects__menu">
             <h5>
-              <Link to="/products">
-                All Products<span>.</span>
+              <Link to="/projects">
+                All Projects<span>.</span>
               </Link>
             </h5>
             <ul>
-              {allProduct.map((item, index) => {
+              {allProject.map((item, index) => {
                 const { gatsbyPath, title } = item
 
                 return (
@@ -57,9 +57,9 @@ const Footer = () => {
         )}
 
         {siteMeta.twitterUsername ||
-        siteMeta.facebookUsername ||
-        siteMeta.instagramUsername ||
-        siteMeta.linkedinUsername ? (
+          siteMeta.facebookUsername ||
+          siteMeta.instagramUsername ||
+          siteMeta.linkedinUsername ? (
           <FooterMenuStyles className="footer__menu social__menu">
             <h5>
               Follow Barcadia<span>.</span>

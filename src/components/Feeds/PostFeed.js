@@ -2,7 +2,7 @@ import React from "react"
 import PostItem from "../Post/PostItem"
 import useAllPost from "../../hooks/use-all-blog-post"
 
-const ProductFeed = () => {
+const PostFeed = () => {
   const allPost = useAllPost()
 
   return allPost.map((node, index) => {
@@ -10,4 +10,4 @@ const ProductFeed = () => {
   })
 }
 
-export default ProductFeed
+export default PostFeed

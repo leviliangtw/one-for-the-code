@@ -8,17 +8,20 @@ require("dotenv").config({
 })
 module.exports = {
   siteMetadata: {
-    title: "Barcadia",
+    title: "One For The Code",
     description: "A super-fast site using GatsbyJS",
     author: "Morgan Baker",
-    twitterUsername: "barcadia",
-    facebookUsername: "barcadia",
-    instagramUsername: "barcadia",
-    linkedinUsername: "morgan-baker-development",
-    image: "/macbook-color.jpg",
-    siteUrl: "https://barcadia.netlify.com",
-    developerName: "Morgan Baker Development",
-    developerUrl: "https://www.morganbaker.dev",
+    twitterUsername: "jihweiliang",
+    facebookUsername: "leviliangtw",
+    instagramUsername: "jihweiliang",
+    linkedinUsername: "jihweiliang",
+    image: "/hallstatt-night.jpg",
+    icon: "/icons8-code-16.png",
+    siteUrl: "https://oftc.netlify.com",
+    developerName: "leviliangtw",
+    developerUrl: "https://github.com/leviliangtw",
+    // developerName: "Morgan Baker Development",
+    // developerUrl: "https://www.morganbaker.dev",
   },
   /* Your site config here */
   plugins: [
@@ -30,13 +33,14 @@ module.exports = {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
         // Learn about environment variables: https://gatsby.dev/env-vars
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        host: `preview.contentful.com`,
       },
     },
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://barcadia.netlify.com",
-        sitemap: "https://barcadia.netlify.com/sitemap.xml",
+        host: "https://oftc.netlify.com",
+        sitemap: "https://oftc.netlify.com/sitemap.xml",
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },
