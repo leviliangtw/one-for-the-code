@@ -286,4 +286,8 @@ blockquote {
   margin-top: calc(var(--gap) / 2);
   margin-bottom: calc(var(--gap) / 2);
 }
+
+.markdown img{
+  width:100%
+}
 `
