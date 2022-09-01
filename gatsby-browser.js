@@ -11,3 +11,5 @@ export function wrapPageElement({ element }) {
 export function wrapRootElement({ element }) {
   return <MenuProvider>{element}</MenuProvider>
 }
+
+require("prismjs/themes/prism-solarizedlight.css")

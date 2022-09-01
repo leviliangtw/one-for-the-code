@@ -281,4 +281,9 @@ blockquote {
   text-align: center;
   margin-top: calc(var(--gap) / 2);
 }
+
+.markdown hr, ol, ul, blockquote{
+  margin-top: calc(var(--gap) / 2);
+  margin-bottom: calc(var(--gap) / 2);
+}
 `

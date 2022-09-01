@@ -6,7 +6,7 @@ import LatestPosts from "../components/Post/LatestPosts"
 import RichText from "../components/RichText"
 
 const PostTemplate = (contentfulPost) => {
-  const { title, createdAt, content } = contentfulPost
+  const { title, createdAt, contentMd, content } = contentfulPost
   return (
     <>
       <section>
@@ -15,9 +15,21 @@ const PostTemplate = (contentfulPost) => {
           {createdAt && (
             <p className="blogsingle__date">Posted on {createdAt}</p>
           )}
-          {content && (
+          {/* {content && (
             <article className="blogsingle__content">
               <RichText richText={content} />
+              <div className="blogsingle__back">
+                <Button to="/blogs" text="Back to blogs" as={Link} />
+              </div>
+            </article>
+          )} */}
+          {contentMd && (
+            <article className="blogsingle__content">
+              <div className="markdown"
+                dangerouslySetInnerHTML={{
+                  __html: contentMd.childMarkdownRemark.html,
+                }}
+              />
               <div className="blogsingle__back">
                 <Button to="/blogs" text="Back to blogs" as={Link} />
               </div>

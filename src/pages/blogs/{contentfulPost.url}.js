@@ -20,6 +20,11 @@ export const data = graphql`
     contentfulPost(id: { eq: $id }) {
       title
       introduction
+      contentMd {
+        childMarkdownRemark {
+          html
+        }
+      }
       content {
         raw
       }
