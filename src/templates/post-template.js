@@ -3,10 +3,10 @@ import { Link } from "gatsby"
 import Button from "../components/Button/Button"
 import { PostSingleStyles } from "../components/Post/PostStyles"
 import LatestPosts from "../components/Post/LatestPosts"
-import RichText from "../components/RichText"
+// import RichText from "../components/RichText"
 
 const PostTemplate = (contentfulPost) => {
-  const { title, createdAt, contentMd, content } = contentfulPost
+  const { title, createdAt, contentMd } = contentfulPost
   return (
     <>
       <section>

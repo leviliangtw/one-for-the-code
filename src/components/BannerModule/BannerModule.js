@@ -49,8 +49,15 @@ const BannerModule = ({ children, title, subTitle, price, enquire, url }) => {
                   to="/contact"
                 />
               )}
-              {/* <Button onClick={scrollToArea} text="Learn More" /> */}
-              <Button text="Learn More" as={Link} to={url} />
+              <Button onClick={scrollToArea} text="Learn More" />
+              {url && (
+                <Button
+                  className="btn"
+                  text="Get It"
+                  as={Link}
+                  to={url}
+                />
+              )}
             </div>
           </div>
         </div>

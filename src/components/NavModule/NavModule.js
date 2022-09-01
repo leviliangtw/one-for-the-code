@@ -4,7 +4,7 @@ import MenuContext from "../MenuContext"
 import { motion } from "framer-motion"
 import { menuItems } from "./NavConstants"
 import { UseSiteMetadata } from "../../hooks/useSiteMetadata"
-import useFeaturedProduct from "../../hooks/use-featured-product"
+// import useFeaturedProduct from "../../hooks/use-featured-product"
 // import { FiChevronDown as Chevron } from "react-icons/fi"
 import {
   NavModuleStyles,
@@ -18,22 +18,22 @@ import {
   barTwoVariants,
   barThreeVariants,
   menuList,
-  subMenuNavVariants,
+  // subMenuNavVariants,
 } from "./NavAnim"
 
 const NavModule = () => {
-  const featuredProduct = useFeaturedProduct()
+  // const featuredProduct = useFeaturedProduct()
 
   const [isOpen, setNav] = useContext(MenuContext)
-  const [subNavIsOpen, setSubNav] = useState(false)
+  // const [subNavIsOpen, setSubNav] = useState(false)
 
   const toggleNav = () => {
     setNav((isOpen) => !isOpen)
   }
 
-  const toggleSubNav = () => {
-    setSubNav((subNavIsOpen) => !subNavIsOpen)
-  }
+  // const toggleSubNav = () => {
+  //   setSubNav((subNavIsOpen) => !subNavIsOpen)
+  // }
 
   const { title } = UseSiteMetadata()
 
