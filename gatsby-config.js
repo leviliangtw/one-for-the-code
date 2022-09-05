@@ -27,7 +27,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-netlify`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-advanced-sitemap`,
     {
       resolve: `gatsby-source-contentful`,
       options: {
@@ -41,7 +41,7 @@ module.exports = {
       resolve: "gatsby-plugin-robots-txt",
       options: {
         host: "https://oftc.netlify.app",
-        sitemap: "https://oftc.netlify.app/sitemap/sitemap-index.xml",
+        sitemap: "https://oftc.netlify.app/sitemap.xml",
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },
