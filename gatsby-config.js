@@ -9,8 +9,8 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: "One For The Code",
-    description: "A super-fast site using GatsbyJS",
-    author: "Morgan Baker",
+    description: "One more shot for the code: there is everything about Software Engineering, Cloud Computing, and Cyber Security",
+    author: "Levi Liang",
     twitterUsername: "jihweiliang",
     facebookUsername: "leviliangtw",
     instagramUsername: "jihweiliang",
@@ -18,7 +18,7 @@ module.exports = {
     image: "/hallstatt-night.jpg",
     icon: "/icons8-code-16.png",
     siteUrl: "https://oftc.netlify.app",
-    developerName: "leviliangtw",
+    developerName: "Levi Liang",
     developerUrl: "https://github.com/leviliangtw",
     // developerName: "Morgan Baker Development",
     // developerUrl: "https://www.morganbaker.dev",
