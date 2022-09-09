@@ -24,9 +24,9 @@ const Index = () => {
           link="/projects"
           linkText="View Projects"
         />
-        <PerksModule>
+        {/* <PerksModule>
           <Perk title="The Title" content="The content" />
-        </PerksModule>
+        </PerksModule> */}
         <Projects
           title="Popular Projects"
           introduction="Featuring useful and powerful functions in different areas, these projects are under well development and maintenance. Aiming to provide great features for anybody, all the projects are developed with an explicit and specific goal. Please feel free to check them out for more information!"

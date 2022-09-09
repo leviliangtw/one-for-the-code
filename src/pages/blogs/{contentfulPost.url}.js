@@ -25,9 +25,6 @@ export const data = graphql`
           html
         }
       }
-      content {
-        raw
-      }
       createdAt(formatString: "DD MMMM, YYYY")
     }
   }
